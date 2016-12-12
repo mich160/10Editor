@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="250.0" prefHeight="500.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.fxml.HSVConeWindowController">
+   <children>
+      <Canvas fx:id="coneCanvas" height="482.0" layoutX="9.0" layoutY="9.0" width="232.0" />
+   </children>
+</Pane>

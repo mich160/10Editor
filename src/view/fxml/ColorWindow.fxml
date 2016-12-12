@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox fx:id="rootVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="239.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="view.fxml.ColorWindowController">
+    <children>
+        <HBox fx:id="colorHBox" prefHeight="100.0" prefWidth="471.0">
+            <children>
+                <Canvas fx:id="colorCanvas" height="200.0" width="200.0"/>
+                <Separator opacity="0.0" prefHeight="8.0" prefWidth="23.0"/>
+                <VBox fx:id="rgbVBox" prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <Label text="Red"/>
+                        <TextField fx:id="redTextField" text="0"/>
+                        <Label text="Green"/>
+                        <TextField fx:id="greenTextField" text="0"/>
+                        <Label text="Blue"/>
+                        <TextField fx:id="blueTextField" text="0"/>
+                    </children>
+                </VBox>
+                <Separator opacity="0.0" prefHeight="10.0" prefWidth="34.0"/>
+                <VBox fx:id="cmykVBox" prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <Label text="Cyan"/>
+                        <TextField fx:id="cyanTextField"/>
+                        <Label text="Magenta"/>
+                        <TextField fx:id="magentaTextField"/>
+                        <Label text="Yellow"/>
+                        <TextField fx:id="yellowTextField"/>
+                        <Label text="Black"/>
+                        <TextField fx:id="blackTextField"/>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <HBox fx:id="buttonsHBox" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Button fx:id="cubeButton" mnemonicParsing="false" text="Kostka RGB"/>
+                <Button fx:id="coneButton" mnemonicParsing="false" text="Stożek HSV"/>
+            </children>
+        </HBox>
+    </children>
+</VBox>

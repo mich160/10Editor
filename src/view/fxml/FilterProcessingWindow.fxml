@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="239.0"
+      prefWidth="387.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="view.fxml.FilterProcessingWindowController">
+    <children>
+        <HBox prefHeight="146.0" prefWidth="600.0">
+            <children>
+                <FlowPane hgap="50.0" prefHeight="175.0" prefWidth="83.0" vgap="10.0">
+                    <children>
+                        <Label text="Filtry"/>
+                        <Button fx:id="smoothenButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0"
+                                text="Wygładzanie"/>
+                        <Button fx:id="medianButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0"
+                                text="Mediana"/>
+                        <Button fx:id="sobelButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0"
+                                text="Sobel"/>
+                        <Button fx:id="sharpenButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0"
+                                text="Wyostrzanie"/>
+                        <Button fx:id="blurButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0"
+                                text="Rozmycie"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </FlowPane>
+                <Separator orientation="VERTICAL" prefHeight="175.0" prefWidth="74.0"/>
+                <HBox alignment="CENTER_LEFT" prefHeight="131.0" prefWidth="422.0" spacing="10.0">
+                    <children>
+                        <VBox prefHeight="175.0" prefWidth="192.0">
+                            <children>
+                                <Label text="Własny filtr"/>
+                                <TextArea fx:id="customFilterTextArea" prefHeight="158.0" prefWidth="150.0"/>
+                            </children>
+                        </VBox>
+                        <Button fx:id="applyCustomFilterButton" mnemonicParsing="false" text="Zastosuj"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" top="5.0"/>
+                    </padding>
+                </HBox>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="48.0" prefWidth="600.0" spacing="50.0">
+            <children>
+                <Button fx:id="okButton" mnemonicParsing="false" text="OK"/>
+                <Button fx:id="cancelButton" mnemonicParsing="false" text="Anuluj"/>
+            </children>
+        </HBox>
+    </children>
+    <opaqueInsets>
+        <Insets/>
+    </opaqueInsets>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+</VBox>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="600.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="view.fxml.MainWindowController">
+    <children>
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="Plik">
+                    <items>
+                        <MenuItem fx:id="openMenuItem" mnemonicParsing="false" text="Otwórz"/>
+                        <MenuItem fx:id="saveMenuItem" mnemonicParsing="false" text="Zapisz"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Przetwarzanie">
+                    <items>
+                        <MenuItem fx:id="pointMenuItem" mnemonicParsing="false" text="Punktowe"/>
+                        <MenuItem fx:id="filterMenuItem" mnemonicParsing="false" text="Filtry"/>
+                        <MenuItem fx:id="histogramMenuItem" mnemonicParsing="false" text="Histogram"/>
+                        <MenuItem fx:id="binarizationMenuItem" mnemonicParsing="false" text="Binaryzacja"/>
+                        <MenuItem fx:id="morphologicMenuItem" mnemonicParsing="false" text="Morfologia"/>
+                        <MenuItem fx:id="analysisMenuItem" mnemonicParsing="false" text="Analiza"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <SplitPane dividerPositions="0.17892976588628762" prefHeight="375.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+            <items>
+                <VBox prefHeight="373.0" prefWidth="93.0">
+                    <children>
+                        <Button fx:id="lineButton" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0"
+                                prefWidth="100.0" text="Linia"/>
+                        <Button fx:id="rectangleButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0"
+                                text="Prostokąt"/>
+                        <Button fx:id="circleButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0"
+                                text="Okrąg"/>
+                        <Button fx:id="bezierButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0"
+                                text="Bezier"/>
+                        <Button fx:id="selectButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0"
+                                text="Zaznaczenie"/>
+                        <Button fx:id="editButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0"
+                                text="Edycja"/>
+                        <Button fx:id="commandButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0"
+                                text="Polecenie"/>
+                        <Button fx:id="clearButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0"
+                                text="Czyść"/>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Canvas fx:id="colorCanvas" height="101.0" width="99.0"/>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <AnchorPane fx:id="canvasPane" prefHeight="200.0" prefWidth="200.0"/>
+            </items>
+        </SplitPane>
+    </children>
+</VBox>

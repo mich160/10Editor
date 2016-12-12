@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="219.0"
+      prefWidth="375.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="view.fxml.EditShapeWindowController">
+    <children>
+        <AnchorPane prefHeight="219.0" prefWidth="264.0">
+            <children>
+                <GridPane alignment="CENTER" hgap="10.0" prefHeight="219.0" prefWidth="266.0" vgap="10.0"
+                          AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                          AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                            <children>
+                                <Label text="Kąt"/>
+                                <TextField fx:id="angleTextField"/>
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                            <children>
+                                <Label text="X"/>
+                                <TextField fx:id="xTextField"/>
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <children>
+                                <Label text="Y"/>
+                                <TextField fx:id="yTextField"/>
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+                            <children>
+                                <Label text="skalaX"/>
+                                <TextField fx:id="xScaleTextField"/>
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <children>
+                                <Label text="skalaY"/>
+                                <TextField fx:id="yScaleTextField"/>
+                            </children>
+                        </VBox>
+                        <CheckBox fx:id="symmetricCheckBox" mnemonicParsing="false" text="skala symetryczna"
+                                  GridPane.rowIndex="3"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                    </padding>
+                </GridPane>
+            </children>
+        </AnchorPane>
+        <Separator orientation="VERTICAL" prefHeight="219.0" prefWidth="0.0"/>
+        <VBox alignment="CENTER" prefHeight="219.0" prefWidth="109.0" spacing="30.0">
+            <children>
+                <Button fx:id="translateButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0"
+                        text="Przesuń"/>
+                <Button fx:id="rotateButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Obróć"/>
+                <Button fx:id="scaleButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Skaluj"/>
+            </children>
+        </VBox>
+    </children>
+</HBox>
